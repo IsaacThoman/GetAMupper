@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get A Mupper</title>
+  </head>
+  <body>
+
+    <script> 
+      function showMupper1() {
+        document.getElementById('mupper').style.display='block'
+        document.getElementById('button1').style.display='none'
+        document.getElementById('button2').style.display='block'
+        document.getElementById('button3').style.display='none'
+      }
+      function showMupper2() {
+        document.getElementById('mupper').style.display='none'
+        document.getElementById('button1').style.display='block'
+        document.getElementById('button2').style.display='none'
+        // remove line 22 to remove picarda
+        //    document.getElementById('button3').style.display='block'
+
+        document.getElementById('mupper2').style.display='none'
+      }
+      function showMupper3() {
+        document.getElementById('mupper2').style.display='block'
+        document.getElementById('button1').style.display='none'
+        document.getElementById('button3').style.display='none'
+        document.getElementById('button2').style.display='block'
+      }
+function beanchat(){
+  window.location.replace("https://getamupper.tk/tbh");
+}
+    </script>
+
+    <button id="button1" style="display:block;" type="button" onclick="showMupper1()">
+      Click here to get a mupper.</button>
+
+    <button id="button2" style="display:none;" type="button" onclick="showMupper2()">
+      Click here to un-get the mupper.</button>
+    <button id="button3" style="display:none;" type="button" onclick="showMupper3()">
+      Click here to get another mupper.</button>
+
+
+    <img id="mupper" src="https://getamupper.tk/thog.jpg" style="width:60%; display:none;">
+
+    
+
+
+  </body>
+</html>
